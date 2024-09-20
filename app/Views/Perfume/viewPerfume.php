@@ -17,7 +17,7 @@
             <th>ML</th>
             <th>Precio</th>  
             <th>Acciones
-                <button onclick="alert('Botón clickeado!')">Click</button>
+            <button onclick="window.location.href='createPerfume.php'">Agregar Nuevo Perfume</button>
             </th>      
         </tr>
        

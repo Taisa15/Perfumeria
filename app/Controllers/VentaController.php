@@ -3,16 +3,16 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ventaModel;
 
-class VentaController extends BaseController{
+class ventaController extends BaseController{
 
-    private $ventaModel;
+    protected $ventaModel;
 
     public function __construct(){
         $this->ventaModel = new ventaModel(); 
     }
     public function index()
     {
-       $ventas = $this->VentaModel->findAll();
+       $ventas = $this->ventaModel->findAll();
         $data = ['ventas' => $ventas];
        return view('Venta/viewVenta',$data);
 

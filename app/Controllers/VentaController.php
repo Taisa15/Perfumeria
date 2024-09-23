@@ -59,6 +59,7 @@ class ventaController extends BaseController{
         if ($this->request->getMethod() === 'POST') {
             $fecha = $this->request->getPost('fecha'); 
             $total = $this->request->getPost('total'); 
+            $descripcion = $this->request->getPost('descripcion'); 
 
             $ventaModel = new VentaModel();
 

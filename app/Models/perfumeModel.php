@@ -13,7 +13,8 @@ class perfumeModel extends Model
         'nombre',
         'descripcion',
         'ml',
-        'precio'
+        'precio',
+        'imagen'
     ];
 
 }

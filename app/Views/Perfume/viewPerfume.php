@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfumeria loca</title>
-    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <?= time(); ?>
 </head>
 <body>
     
@@ -13,62 +14,11 @@
                 <h1>Perfumeria :D</h1>
             </header>
 
-            <style>
-                body{
-                    background-color: lightgrey;
-                }
-
-                #container {
-                margin: 0px auto;    
-                width: 1100px;
-                height: 60px;
-                }
-
-                header{
-                    background-color: palevioletred;
-                    text-align: center;
-                    color: whitesmoke;
-                }
-
-                .article{
-                    background-color: rebeccapurple
-                }
-
-                aside{
-                    background-color: pink;
-                    color: rebeccapurple;
-                    text-align: center; 
-                }
-
-                tr{
-                    font-family: Arial, Helvetica, sans-serif;
-                    background-color: wheat;
-                    border-collapse: collapse;
-                    text-align: left;                  
-                }
-
-                tr,td{
-                    
-                    padding: 10px;
-                }
-       
-                th{
-                    background-color: hotpink;
-                }
-
-                table{
-                    margin: 0px auto; 
-                }
-
-                 h2{
-                    font-size: 20px;
-                 }
-            </style>
-
+           
             <section id="content">
                 <article class="article">
                     <h2>Barato</h2>
-                    <p>Los mejores perfumes a los mejores precios para la gente criticona</p>
+                    <p>Los mejores perfumes a los mejores precios </p>
                     <table>
        <thead>
         <tr>         
@@ -77,8 +27,9 @@
             <th>Descripción</th>
             <th>ML</th>
             <th>Precio</th>  
+            <th>Imagen</th>
             <th>Acciones
-        *   /* <button onclick="window.location.href='createPerfume.php'">Agregar Nuevo Perfume</button>*//*
+            <button onclick="window.location.href='createPerfume.php'">Agregar Nuevo Perfume</button>
             </th>      
         </tr>
        
@@ -107,7 +58,9 @@
                             <td><?= $perfume['nombre'] ?></td>
                             <td><?= $perfume['descripcion'] ?></td>
                             <td><?= $perfume['ml'] ?></td>
+                            
                             <td><?= number_format($perfume['precio'], 2) ?> MXN</td>
+                            <td><?= $perfume['imagen']?></td>
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
@@ -122,6 +75,10 @@
         <img width="112px" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-sQQQZ_mbV_8AJWCaFdlsnyYvQEh9yuXpgA&s"/>
          <img width="112px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZojViJ1hXblH5PWehW8g-XEY59yD5OdVUA&s"/>
          <img width="150px" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr67EYBsktiibCwLhRLDQgQluBaEKjHxKkUg&s"/>
+        </div>
+
+        <div id="container2">
+
         </div>
 
 </body>

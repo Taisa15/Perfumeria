@@ -27,6 +27,7 @@ class PerfumeController extends BaseController{
             $descripcion = $this->request->getPost('descripcion'); 
             $ml = $this->request->getPost('ml'); 
             $precio = $this->request->getPost('precio'); 
+            $imagen = $this->request->getPost('imagen'); 
 
             $perfumeModel = new PerfumeModel();
 
@@ -34,7 +35,8 @@ class PerfumeController extends BaseController{
                 'nombre' => $nombre,
                 'descripcion' => $descripcion,
                 'ml' => $ml,
-                'precio' => $precio
+                'precio' => $precio,
+                'imagen' => $imagen
             ];
 
             if ($perfumeModel->insert($data)) {
@@ -67,6 +69,7 @@ class PerfumeController extends BaseController{
             $descripcion = $this->request->getPost('descripcion'); 
             $ml = $this->request->getPost('ml'); 
             $precio = $this->request->getPost('precio'); 
+            $imagen = $this->request->getPost('imagen');
 
             $perfumeModel = new PerfumeModel();
 
@@ -75,7 +78,8 @@ class PerfumeController extends BaseController{
                 'nombre' => $nombre,
                 'descripcion' => $descripcion,
                 'ml' => $ml,
-                'precio' => $precio
+                'precio' => $precio,
+                'imagen' => $imagen
             ];
 
             // Actualizar el registro

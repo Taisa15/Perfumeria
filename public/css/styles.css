@@ -1,26 +1,50 @@
 body{
-  background-color: lightgrey;
-  font-family: Arial, Helvetica, sans-serif;
-
+    background-color: rgb(58, 75, 58);
+}
 
 #container {
-  width: 1100px;
-  height: 60px;
-  margin: 0px auto;
+margin: 0px auto;    
+width: 1100px;
+height: 60px;
 }
 
-
-
+header{
+    background-color: palevioletred;
+    text-align: center;
+    color: whitesmoke;
 }
 
-
-
-body{
-    background-color: lightgrey;
-                        #container {
-    width: 1100px;
-    height: 60px;
-    margin: 0px auto;
-    }
-
+.article{
+    background-color: rebeccapurple
 }
+
+aside{
+    background-color: pink;
+    color: rebeccapurple;
+    text-align: center; 
+}
+
+tr{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: wheat;
+    border-collapse: collapse;
+    text-align: left;                  
+}
+
+tr,td{
+    
+    padding: 10px;
+}
+
+th{
+    background-color: hotpink;
+}
+
+table{
+    margin: 0px auto; 
+}
+
+ h2{
+    font-size: 20px;
+ }
+

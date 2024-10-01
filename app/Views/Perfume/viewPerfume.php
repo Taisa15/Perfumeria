@@ -27,29 +27,11 @@
             <th>Descripción</th>
             <th>ML</th>
             <th>Precio</th>  
-            <th>Imagen</th>
-            <th>Acciones
-            <button onclick="window.location.href='createPerfume.php'">Agregar Nuevo Perfume</button>
-            </th>      
-        </tr>
-       
-            
-      
+            <th>Imagen</th>   
+        </tr>   
        </thead>
                 </article>
             </section>
-
-            <aside>
-                <h2>Agregar nuevo perfume</h2>
-                <form>
-                    <input type="text">
-                    <input type="submit" value="Agregar"/>
-                </form>
-            
-                <footer>Distribuidor Autorizado</footer>
-    
-   
-            </aside>
 
                 <tbody>
                         <?php foreach ($perfumes as $perfume): ?>
@@ -60,11 +42,13 @@
                             <td><?= $perfume['ml'] ?></td>
                             
                             <td><?= number_format($perfume['precio'], 2) ?> MXN</td>
-                            <td><?= $perfume['imagen']?></td>
+                            <td><?= $perfume['imagen']?></td>                          
+          
                         </tr>
                         <?php endforeach; ?>
                     </tbody>
                     </table>
+                    <button onclick="window.location.href='createPerfume'">Agregar Nuevo Perfume</button>
                     <br>
 
         <img width="150px" src="https://www.dior.com/dw/image/v2/BGXS_PRD/on/demandware.static/-/Sites-master_dior/default/dwd7d26ce7/Y0996347/Y0996347_C099600764_E01_GHC.jpg?sw=1850&sh=1850" />
@@ -76,10 +60,5 @@
          <img width="112px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6ZojViJ1hXblH5PWehW8g-XEY59yD5OdVUA&s"/>
          <img width="150px" src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr67EYBsktiibCwLhRLDQgQluBaEKjHxKkUg&s"/>
         </div>
-
-        <div id="container2">
-
-        </div>
-
 </body>
 </html>

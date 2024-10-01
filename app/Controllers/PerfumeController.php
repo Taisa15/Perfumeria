@@ -38,7 +38,7 @@ class PerfumeController extends BaseController{
                 'precio' => $precio,
                 'imagen' => $imagen
             ];
-
+ return view('Perfume/createPerfume',$data);
             if ($perfumeModel->insert($data)) {
                 return "Perfume registrado correctamente.";
             } else {
@@ -47,6 +47,7 @@ class PerfumeController extends BaseController{
         }
 
         return "Método no permitido.".$this->request->getMethod();
+       
     }
 
  

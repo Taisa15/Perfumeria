@@ -6,17 +6,29 @@
     <title>Crear nuevo</title>
 </head>
 <body>
-    <form action="<?php base_url()?>PerfumeController/createPerfume"method = "post">
-    <label for="nombre"></label>
+    <form action="<?php base_url()?>PerfumeController/createPerfume"method="POST">
+    <label for="nombre">Nombre del perfume:</label>
     <input type="text"id="nombre"name="nombre"> <br><br>
-    <label for="descripcion"></label>
+    <label for="descripcion">Descripción:</label>
     <input type="text"id="descripcion"name="descripcion"> <br><br>
-    <label for="ml"></label>
+    <label for="ml">Mililitros (ml):</label>
     <input type="text"id="ml"name="ml"> <br><br>
-    <label for="precio"></label>
+    <label for="precio">Precio:</label>
     <input type="text"id="precio"name="precio"> <br><br>
     <button type="submit">Enviar</button>
     </form>
    
 </body>
 </html>
+        
+  
+        
+        
+      
+        
+        
+     
+        
+        
+    
+ 

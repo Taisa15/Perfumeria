@@ -1,5 +1,9 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
 body{
-    background-color: rgb(39, 53, 4);
+    background-color: #D2D5AF;
 }
 
 #container {
@@ -12,14 +16,41 @@ height: 60px;
 
 
 header{
-    background-color: rgb(155, 30, 71);
-    text-align: center;
-    color: whitesmoke;
-    border: 5px solid black;
+    background-image: url('/Perfumeria/images/lancome.jpeg');
+    height: 150px;
+    width: 1279px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    text-align: left;
+    
+}
+header h1{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 2em; 
+    margin: 0; 
+    z-index: 2;
 }
 
+header::before {
+    content: ''; /* Necesario para que el pseudo-elemento se muestre */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 0; /* Desde la parte superior */
+    left: 0; /* Desde la parte izquierda */
+    right: 0; /* Desde la parte derecha */
+    bottom: 0; /* Desde la parte inferior */
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+    z-index: 1; 
+
+}
+
+
 .article{
-    background-color: rebeccapurple
+   
     
 }
 
@@ -30,26 +61,70 @@ aside{
 }
 
 tr{
+   
     font-family: Arial, Helvetica, sans-serif;
-    background-color: wheat;
+    background-color: #A3AB98;
     border-collapse: collapse;
     text-align: left;                  
 }
 
 tr,td{
-    
-    padding: 10px;
+ 
+    height: 10px;
+    padding: 7px;
 }
 
 th{
-    background-color: hotpink;
+    
+    background-color: #A3AB98;
 }
 
 table{
-    margin: 0px auto; 
+    width: 1278px;
+    margin: 0px; 
 }
 
  h2{
     font-size: 20px;
  }
 
+/* Estilos para el menú */
+nav {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 180px; 
+    height: 100%; 
+    background-color: #D2D5AF; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style-type: none; /* Elimina los puntos de las listas */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 20px 0; /* Espaciado entre los elementos de la lista */
+}
+
+nav ul li a {
+    color: #5A393B; /* Color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 18px; /* Tamaño de la fuente */
+    display: block; /* Hace que los enlaces ocupen todo el ancho del menú */
+    padding: 10px;
+    /*background-color: #444;  Fondo de los enlaces (puedes cambiarlo) */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+nav ul li a:hover {
+    background-color: #A3AB98; /* Cambia el color de fondo al pasar el mouse por encima */
+}
+
+nav ul li a i {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+    font-size: 1.2em;   /* Tamaño del icono */
+}

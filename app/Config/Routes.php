@@ -10,6 +10,7 @@ $routes->get('perfume', 'PerfumeController::index');
 $routes->get('venta', 'VentaController::index');
 //create
 $routes->post('createPerfume', 'PerfumeController::create');
+
 $routes->post('createVenta', 'VentaController::create');
 
 //delete

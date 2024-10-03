@@ -6,7 +6,8 @@
     <title>Crear nuevo</title>
 </head>
 <body>
-    <form action="<?php base_url()?>PerfumeController/createPerfume"method="POST">
+    
+    <form action="<?php base_url()?>PerfumeController/createPerfume"method="POST enctype="multipart>
     <label for="nombre">Nombre del perfume:</label>
     <input type="text"id="nombre"name="nombre"> <br><br>
     <label for="descripcion">Descripción:</label>
@@ -15,20 +16,11 @@
     <input type="text"id="ml"name="ml"> <br><br>
     <label for="precio">Precio:</label>
     <input type="text"id="precio"name="precio"> <br><br>
-    <button type="submit">Enviar</button>
+    <input type="file" name="image" id="image">
+    <label for="image">Imagen del perfume:</label>
+    <button type="submit">Guardar perfume</button>
     </form>
    
 </body>
 </html>
         
-  
-        
-        
-      
-        
-        
-     
-        
-        
-    
- 

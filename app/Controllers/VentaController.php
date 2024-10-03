@@ -3,7 +3,7 @@ namespace App\Controllers;
 use App\Controllers\BaseController;
 use App\Models\ventaModel;
 
-class ventaController extends BaseController{
+class VentaController extends BaseController{
 
     protected $ventaModel;
 

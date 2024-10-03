@@ -38,16 +38,16 @@ class PerfumeController extends BaseController{
                 'precio' => $precio,
                 'imagen' => $imagen
             ];
- return view('Perfume/createPerfume',$data);
+
             if ($perfumeModel->insert($data)) {
-                return "Perfume registrado correctamente.";
+                return view('Perfume/createPerfume');
             } else {
                 return "Error al registrar el perfume.";
             }
         }
 
         return "Método no permitido.".$this->request->getMethod();
-       
+        //return view('Perfume/createPerfume',$data);
     }
 
  
@@ -104,10 +104,15 @@ class PerfumeController extends BaseController{
         if ($perfume) {
             // Si se encuentra el perfume, puedes devolverlo a una vista
             var_dump($perfume);
+            return view('Perfume/createPerfume');
         } else {
             return "Perfume no encontrado.";
         }
     }
+
+    public function new() {
+        return view('Perfume/createPerfume');
+        }
 
     }
 

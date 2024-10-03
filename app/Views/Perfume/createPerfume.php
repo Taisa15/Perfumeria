@@ -13,7 +13,7 @@
         </div>
     <?php endif; ?>
 
-    <form action="<?php base_url('perfume/create')?>"method="POST" enctype="multipart/form-data">
+    <form action="<?= base_url('perfume/create')?>"method="POST" enctype="multipart/form-data">
     <label for="nombre">Nombre del perfume:</label>
     <input type="text"id="nombre"name="nombre"> <br><br>
     <label for="descripcion">Descripción:</label>

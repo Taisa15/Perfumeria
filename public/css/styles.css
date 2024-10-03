@@ -16,9 +16,9 @@ height: 60px;
 
 
 header{
-    background-image: url('/Perfumeria/images/lancome.jpeg');
+    background-image: url('../images/lancome.jpeg');
     height: 150px;
-    width: 1279px;
+    width: 100;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -37,17 +37,16 @@ header h1{
 }
 
 header::before {
-    content: ''; /* Necesario para que el pseudo-elemento se muestre */
-    position: absolute; /* Posicionamiento absoluto */
-    top: 0; /* Desde la parte superior */
-    left: 0; /* Desde la parte izquierda */
-    right: 0; /* Desde la parte derecha */
-    bottom: 0; /* Desde la parte inferior */
-    background-color: rgba(0, 0, 0, 0.5); /* Color negro con opacidad del 50% */
+    content: '';
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1; 
 
 }
-
 
 .article{
    
@@ -77,18 +76,22 @@ tr,td{
 th{
     
     background-color: #A3AB98;
+    
 }
 
 table{
-    width: 1278px;
+    width: 100%;
+    table-layout: fixed;
     margin: 0px; 
 }
+
+
 
  h2{
     font-size: 20px;
  }
 
-/* Estilos para el menú */
+
 nav {
     position: fixed;
     top: 0; 
@@ -101,30 +104,29 @@ nav {
 }
 
 nav ul {
-    list-style-type: none; /* Elimina los puntos de las listas */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin: 20px 0; /* Espaciado entre los elementos de la lista */
+    margin: 20px 0; 
 }
 
 nav ul li a {
-    color: #5A393B; /* Color del texto de los enlaces */
-    text-decoration: none; /* Elimina el subrayado de los enlaces */
-    font-size: 18px; /* Tamaño de la fuente */
-    display: block; /* Hace que los enlaces ocupen todo el ancho del menú */
+    color: #5A393B;
+    text-decoration: none; 
+    font-size: 18px; 
+    display: block; 
     padding: 10px;
-    /*background-color: #444;  Fondo de los enlaces (puedes cambiarlo) */
-    border-radius: 4px; /* Bordes redondeados */
+    border-radius: 4px; 
 }
 
 nav ul li a:hover {
-    background-color: #A3AB98; /* Cambia el color de fondo al pasar el mouse por encima */
+    background-color: #A3AB98; 
 }
 
 nav ul li a i {
-    margin-right: 10px; /* Espacio entre el icono y el texto */
-    font-size: 1.2em;   /* Tamaño del icono */
+    margin-right: 10px; 
+    font-size: 1.2em;   
 }

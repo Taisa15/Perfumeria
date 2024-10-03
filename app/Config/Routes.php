@@ -9,7 +9,9 @@ $routes->get('/', 'Home::index');
 $routes->get('perfume', 'PerfumeController::index');
 $routes->get('venta', 'VentaController::index');
 //create
-$routes->post('createPerfume', 'PerfumeController::create');
+$routes->get('perfume/new', 'PerfumeController::new');
+$routes->post('perfume/create', 'PerfumeController::create');
+
 
 $routes->post('createVenta', 'VentaController::create');
 
@@ -24,4 +26,3 @@ $routes->post('updateVenta/(:num)', 'VentaController::update/$1');
 //findbyid
 $routes->get('perfume/(:num)', 'PerfumeController::findById/$1');
 $routes->get('venta/(:num)', 'VentaController::findById/$1');
-

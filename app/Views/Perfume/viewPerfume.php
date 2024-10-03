@@ -45,7 +45,11 @@
                             <td><?= $perfume['ml'] ?></td>
                             
                             <td><?= number_format($perfume['precio'], 2) ?> MXN</td>
-                            <td><?= $perfume['imagen']?></td>                          
+                            <td>
+                            <img src="<?= base_url('images/' . $perfume['imagen']); ?>" alt="<?= $perfume['nombre']; ?>" style="max-width: 200px; height: auto;" />
+
+
+            </td>                
           
                         </tr>
                         <?php endforeach; ?>
@@ -58,7 +62,7 @@
         <nav>
             <ul>
                 <li>
-                <a href="createPerfume.php">
+                <a href="<?= base_url('perfume/new')?>">
                 <i class="fas fa-spray-can"></i> Agregar perfume
             </a>
                 </li>

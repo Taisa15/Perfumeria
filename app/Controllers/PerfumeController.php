@@ -27,28 +27,34 @@ class PerfumeController extends BaseController{
             $descripcion = $this->request->getPost('descripcion'); 
             $ml = $this->request->getPost('ml'); 
             $precio = $this->request->getPost('precio'); 
-            $imagen = $this->request->getPost('imagen'); 
 
+            $imageFile = $this->request->getFile('image');
+ 
+            $imageName = $imageFile->getRandomName(); 
+
+            $imageFile->move(WRITEPATH . '../public/images', $imageName);
+    
             $perfumeModel = new PerfumeModel();
-
+    
             $data = [
                 'nombre' => $nombre,
                 'descripcion' => $descripcion,
                 'ml' => $ml,
                 'precio' => $precio,
-                'imagen' => $imagen
+                'imagen' => $imageName 
             ];
-
+    
             if ($perfumeModel->insert($data)) {
-                return view('Perfume/createPerfume');
+            
+                return redirect()->to('/perfume'); 
             } else {
                 return "Error al registrar el perfume.";
             }
         }
-
-        return "Método no permitido.".$this->request->getMethod();
-        //return view('Perfume/createPerfume',$data);
+    
+        return "Método no permitido.";
     }
+    
 
  
         public function delete($id)
@@ -115,6 +121,3 @@ class PerfumeController extends BaseController{
         }
 
     }
-
-    
-

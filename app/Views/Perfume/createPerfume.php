@@ -4,15 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear nuevo</title>
+    <link rel="stylesheet" href="<?= base_url('css/styles.css'); ?>"/>
+
+    <?= time(); ?>
 </head>
 <body>
-
-<?php if (session()->getFlashdata('error')): ?>
-        <div style="color: red;">
-            <?= session()->getFlashdata('error') ?>
-        </div>
-    <?php endif; ?>
-
+    <h1>Crear nuevo perfume</h1>
     <form action="<?= base_url('perfume/create')?>"method="POST" enctype="multipart/form-data">
     <label for="nombre">Nombre del perfume:</label>
     <input type="text"id="nombre"name="nombre"> <br><br>
@@ -26,7 +23,17 @@
     <label for="image">Imagen del perfume:</label>
     <button type="submit">Guardar perfume</button>
     </form>
-   
+     
+    
+ 
+
+<?php if (session()->getFlashdata('error')): ?>
+        <div style="color: red;">
+            <?= session()->getFlashdata('error') ?>
+        </div>
+    <?php endif; ?>
+
+    
 </body>
 </html>
         

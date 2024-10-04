@@ -8,13 +8,15 @@ body{
 
 #container {
 margin: 0px auto;    
-
 width: 1100px;
 height: 60px;
 
 }
 
+h1, label{
+    font-family: Arial, Helvetica, sans-serif;
 
+}
 header{
     background-image: url('../images/lancome.jpeg');
     height: 150px;

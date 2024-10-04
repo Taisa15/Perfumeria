@@ -130,3 +130,32 @@ nav ul li a i {
     margin-right: 10px; 
     font-size: 1.2em;   
 }
+
+button{
+    /* Button */
+box-sizing: border-box;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px;
+gap: 8px;
+
+position: absolute;
+width: 75px;
+height: 40px;
+left: 389px;
+top: 386px;
+
+background: #5B3938;
+border: 1px solid #DFA49B;
+border-radius: 8px;
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+z-index: 2;
+
+}

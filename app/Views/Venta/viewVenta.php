@@ -4,19 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfumeria loca</title>
+    <link rel="stylesheet" href="css/styles.css?v=1.0"/>
 </head>
 <body>
-    <h1> ventaa </h1>
+<div id="container">
+    <header> <h1> Ventas </h1> </header>
     <table>
        <thead>
         <tr>         
-            <th>ID</th>
+            <th>ID</th> <break> 
             <th>Fecha</th>
             <th>Total</th>  
             <th>Acciones
-            
             </th>  
-            <button onclick="window.location.href='createVenta.php'">Agregar Nueva Venta</button>    
+            <button onclick="window.location.href='createVenta.php'">Agregar Nueva Venta</button> 
+            <button class="btn btn-primary" type="submit">Agregar Venta</button>   
         </tr>
        
        </thead>
@@ -32,5 +34,6 @@
 </tbody>
     </table>
     <br>
+    </div>
 </body>
 </html>

@@ -3,16 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear nueva venta</title>
+    <title>Crear nuevo</title>
+    <link rel="stylesheet" href="<?= base_url('css/styles.css'); ?>"/>
+
+    <?= time(); ?>
 </head>
 <body>
-    <form action="<?php base_url()?>VentaController/createVenta"method = "post">
-    <label for="fecha"></label>
-    <input type="text"id="fecha"name="fecha"><br><br>
-    <label for="total"></label>
+    <h1>Crear nueva Venta</h1>
+    <form action="<?= base_url('venta/create')?>"method="POST" enctype="multipart/form-data">
+    <label for="fecha">Fecha:</label>
+    <input type="text"id="fecha"name="fecha"> <br><br>
+    <label for="total">Total:</label>
     <input type="text"id="total"name="total"> <br><br>
-    <button type="submit">Enviar</button>
+    
+    <button type="submit">Guardar venta</button>
     </form>
-   
+     
+    
+ 
+
+<?php if (session()->getFlashdata('error')): ?>
+        <div style="color: red;">
+            <?= session()->getFlashdata('error') ?>
+        </div>
+    <?php endif; ?>
+
+    
 </body>
 </html>

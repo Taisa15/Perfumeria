@@ -32,7 +32,7 @@ class VentaController extends BaseController{
             ];
 
             if ($ventaModel->insert($data)) {
-                return "Venta registrada correctamente.";
+                return redirect()->to('/venta'); 
             } else {
                 return "Error al registrar su venta.";
             }
@@ -94,5 +94,13 @@ class VentaController extends BaseController{
             return "Su venta no se ha encontrado.";
         }
     }
+    public function new() {
+        return view('Venta/createVenta');
+        }
+
+
+
+
+
 
     }

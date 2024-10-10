@@ -13,7 +13,7 @@ $routes->get('perfume/new', 'PerfumeController::new');
 $routes->post('perfume/create', 'PerfumeController::create');
 
 
-$routes->post('createVenta', 'VentaController::create');
+$routes->get('venta/new', 'VentaController::new');
 
 //delete
 $routes->delete('deletePerfume/(:num)', 'PerfumeController::delete/$1');

@@ -67,7 +67,7 @@
             </a>
                 </li>
                 <li>
-                <a href="createVenta.php">
+                <a href="Venta/viewVenta.php">
                 <i class="fas fa-shopping-cart"></i> Venta
             </a>
                 </li>

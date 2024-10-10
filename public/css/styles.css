@@ -8,15 +8,13 @@ body{
 
 #container {
 margin: 0px auto;    
+
 width: 1100px;
 height: 60px;
 
 }
 
-h1, label{
-    font-family: Arial, Helvetica, sans-serif;
 
-}
 header{
     background-image: url('../images/lancome.jpeg');
     height: 150px;
@@ -133,15 +131,13 @@ nav ul li a i {
     font-size: 1.2em;   
 }
 
-button{
-    /* Button */
+.btn-add{
 box-sizing: border-box;
-/* Auto layout */
 display: flex;
 flex-direction: row;
 justify-content: center;
 align-items: center;
-padding: 12px;
+padding: 10px  20px;
 gap: 8px;
 
 position: absolute;
@@ -150,14 +146,32 @@ height: 40px;
 left: 389px;
 top: 386px;
 
-background: #5B3938;
-border: 1px solid #DFA49B;
+background-color: #5B3938;
+border: none;
 border-radius: 8px;
+color: white;
+cursor: pointer;
+}
 
-/* Inside auto layout */
-flex: none;
-order: 2;
-flex-grow: 0;
-z-index: 2;
+.btn-add :hover{
+    background-color: #1a1010;
+    cursor: pointer;
+}
+
+
+.cont{
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 44px 0px 56px;
+gap: 40px;
+
+position: absolute;
+width: 72px;
+height: 709px;
+left: 0px;
+top: 68px;
+
+background: #D2D5AF;
 
 }

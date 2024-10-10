@@ -17,23 +17,43 @@
             <th>Total</th>  
             <th>Acciones
             </th>  
-            <button onclick="window.location.href='createVenta.php'">Agregar Nueva Venta</button> 
-            <button class="btn btn-primary" type="submit">Agregar Venta</button>   
+            <button class="btn-add" onclick="window.location.href='Venta/new'">Agregar Nueva Venta</button> 
+             
         </tr>
        
        </thead>
        <tbody>
-    <?php foreach ($ventas as $venta): ?>
-    <tr>
-        <!-- Escapar las variables con htmlspecialchars -->
-        <td><?= htmlspecialchars($venta['id'], ENT_QUOTES, 'UTF-8') ?></td>
-        <td><?= htmlspecialchars($venta['fecha'], ENT_QUOTES, 'UTF-8') ?></td>
-        <td><?= number_format(htmlspecialchars($venta['total'], ENT_QUOTES, 'UTF-8'), 2) ?> MXN</td>
-    </tr>
-    <?php endforeach; ?>
-</tbody>
+            <?php foreach ($ventas as $venta): ?>
+            <tr>
+                <!-- Escapar las variables con htmlspecialchars -->
+                <td><?= htmlspecialchars($venta['id'], ENT_QUOTES, 'UTF-8') ?></td>
+                <td><?= htmlspecialchars($venta['fecha'], ENT_QUOTES, 'UTF-8') ?></td>
+                <td><?= number_format(htmlspecialchars($venta['total'], ENT_QUOTES, 'UTF-8'), 2) ?> MXN</td>
+            </tr>
+            <?php endforeach; ?>
+       </tbody>
     </table>
     <br>
-    </div>
+
+
+
+    <nav>
+        <ul>
+            <li>
+                <a href="<?php base_url('')?>">
+                    <i class="fas fa-spray-can">
+                    </i> Perfume
+                </a>
+            </li>
+            <li>
+            <a href="<?php base_url('')?>">
+                    <i class="fas fa-shopping-cart">
+                    </i> Venta
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
 </body>
 </html>

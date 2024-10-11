@@ -15,8 +15,10 @@
     <input type="text"id="fecha"name="fecha"> <br><br>
     <label for="total">Total:</label>
     <input type="text"id="total"name="total"> <br><br>
+    <label for="cliente">Cliente:</label>
+    <input type="text"id="cliente"name="cliente"> <br><br>
     
-    <button type="submit">Guardar venta</button>
+    <button type="submit"class="btn-add">Guardar venta</button>
     </form>
      
     

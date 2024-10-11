@@ -23,12 +23,14 @@ class VentaController extends BaseController{
         if ($this->request->getMethod() === 'POST') {
             $fecha = $this->request->getPost('fecha'); 
             $total = $this->request->getPost('total'); 
+            $cliente = $this->request->getPost('cliente');
           
 
             $ventaModel = new ventaModel();
             $data = [
                 'fecha' => $fecha,
-                'total' => $total
+                'total' => $total,
+                'cliente' => $cliente
             ];
 
             if ($ventaModel->insert($data)) {

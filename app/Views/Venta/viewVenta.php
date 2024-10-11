@@ -12,11 +12,11 @@
     <table>
        <thead>
         <tr>         
-            <th>ID</th> <break> 
+            <th>ID</th>  
             <th>Fecha</th>
             <th>Total</th>  
-            <th>Acciones
-            </th>  
+            <th>Acciones </th> 
+            <th>Cliente</th>   
             <button class="btn-add" onclick="window.location.href='Venta/new'">Agregar Nueva Venta</button> 
              
         </tr>
@@ -29,6 +29,7 @@
                 <td><?= htmlspecialchars($venta['id'], ENT_QUOTES, 'UTF-8') ?></td>
                 <td><?= htmlspecialchars($venta['fecha'], ENT_QUOTES, 'UTF-8') ?></td>
                 <td><?= number_format(htmlspecialchars($venta['total'], ENT_QUOTES, 'UTF-8'), 2) ?> MXN</td>
+                <td><?= htmlspecialchars($venta['cliente'], ENT_QUOTES, 'UTF-8') ?></td>
             </tr>
             <?php endforeach; ?>
        </tbody>

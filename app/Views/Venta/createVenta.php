@@ -12,7 +12,7 @@
     <h1>Crear nueva Venta</h1>
     <form action="<?= base_url('venta/create')?>"method="POST" enctype="multipart/form-data">
     <label for="fecha">Fecha:</label>
-    <input type="text"id="fecha"name="fecha"> <br><br>
+    <input type="date"id="fecha"name="fecha"> <br><br>
     <label for="total">Total:</label>
     <input type="text"id="total"name="total"> <br><br>
     <label for="cliente">Cliente:</label>

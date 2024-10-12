@@ -16,9 +16,8 @@
             <th>ID</th>  
             <th>Fecha</th>
             <th>Total</th>  
-            <th>Acciones </th> 
             <th>Cliente</th>   
-            <button class="btn-add" onclick="window.location.href='Venta/new'">Agregar Nueva Venta</button> 
+            <button class="btn-add" onclick="window.location.href='venta/new'">Agregar Nueva Venta</button> 
              
         </tr>
        

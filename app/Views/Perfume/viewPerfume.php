@@ -63,14 +63,21 @@
             <ul>
                 <li>
                 <a href="<?= base_url('perfume/new')?>">
-                <i class="fas fa-spray-can"></i> Agregar perfume
+                <i class="fas fa-spray-can"></i> Perfume
             </a>
                 </li>
                 <li>
-                <a href="Venta/viewVenta.php">
+                <a href="venta/">
                 <i class="fas fa-shopping-cart"></i> Venta
             </a>
                 </li>
+                
+                <li>
+                <a href="Venta/viewVenta.php">
+                <i class="fas fa-user-alt"></i>Cliente
+            </a>
+                </li>
+
             </ul>
         </nav>
 

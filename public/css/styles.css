@@ -16,7 +16,7 @@ height: 60px;
 
 
 header{
-    background-image: url('../images/lancome.jpeg');
+    background-image: url('perfumeria/public/lancome.jpeg');
     height: 150px;
     width: 100%;
     background-position: center;

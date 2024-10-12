@@ -52,6 +52,12 @@
                     </i> Venta
                 </a>
             </li>
+            <li>
+            <a href="<?php base_url('')?>">
+                    <i class="fas fa-user-alt">
+                    </i> Venta
+                </a>
+            </li>
         </ul>
     </nav>
 

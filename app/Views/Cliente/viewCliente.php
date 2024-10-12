@@ -68,8 +68,8 @@
             </a>
                 </li>
                 <li>
-                <a href="Venta/viewVenta.php">
-                <i class="fas fa-shopping-cart"></i> Cliente
+                <a href="Cliente/viewCliente.php">
+                <i class="fas fa-user-alt"></i> Cliente
                 </li>
          
             </a>

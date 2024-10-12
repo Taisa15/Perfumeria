@@ -26,7 +26,7 @@ class ClienteController extends BaseController{
             $idPerfume = $this->request->getPost('idPerfume');
           
 
-            $ventaModel = new ventaModel();
+            $clienteModel = new clienteModel();
             $data = [
                 'nombre' => $nombre,
                 'email' => $email,
@@ -49,7 +49,7 @@ class ClienteController extends BaseController{
         $clienteModel = new clienteModel();
 
         // Prueba eliminar el registro
-        if ($cliente3Model->delete($id)) {
+        if ($clienteModel->delete($id)) {
             return "El cliente ha sido eliminada correctamente.";
         } else {
             return "Error al eliminar al cliente";
@@ -85,7 +85,7 @@ class ClienteController extends BaseController{
 
     public function findById($id)
     {
-        $ventaModel = new VentaModel();
+        $clienteModel = new clienteModel();
         
         // Obtener venta por ID
         $cliente = $clienteModel->find($id);

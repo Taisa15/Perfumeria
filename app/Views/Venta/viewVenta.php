@@ -26,13 +26,16 @@
        <tbody>
             <?php foreach ($ventas as $venta): ?>
             <tr>
-                <!-- Escapar las variables con htmlspecialchars -->
-                <td><?= htmlspecialchars($venta['id'], ENT_QUOTES, 'UTF-8') ?></td>
-                <td><?= htmlspecialchars($venta['fecha'], ENT_QUOTES, 'UTF-8') ?></td>
-                <td><?= number_format(htmlspecialchars($venta['total'], ENT_QUOTES, 'UTF-8'), 2) ?> MXN</td>
-                <td><?= htmlspecialchars($venta['cliente'], ENT_QUOTES, 'UTF-8') ?></td>
+                <td><?= $venta['id'] ?></td>
+                <td><?= $venta['fecha'] ?></td>
+                <td><?= number_format($venta['total'], 2) ?> MXN</td>
+                <td><?= $venta['idCliente'] ?></td>
             </tr>
             <?php endforeach; ?>
+
+
+
+
        </tbody>
     </table>
     <br>

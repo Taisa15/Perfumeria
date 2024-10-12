@@ -12,6 +12,7 @@ $routes->get('cliente', 'ClienteController::index');
 //create
 $routes->get('perfume/new', 'PerfumeController::new');
 $routes->post('perfume/create', 'PerfumeController::create');
+$routes->post('venta/create', 'VentaController::create');
 
 
 $routes->get('venta/new', 'VentaController::new');
